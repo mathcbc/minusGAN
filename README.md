@@ -5,7 +5,12 @@ this code was based on [ALICE](https://github.com/ChunyuanLI/ALICE).
 - `python 2.7 or 3.5`
 - `TensorFlow 1.0.0`
 
-### Experiments on toy data
+### Training the model
+```bash
+python minusGAN.py
+```
+
+### Experiment results on toy data
 we have two datasets X and Y,
 
 <img src='https://github.com/mathcbc/minusGAN/blob/master/results/X_train.png' align="left" width=250 />
