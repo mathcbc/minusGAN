@@ -7,4 +7,4 @@ this code is based on [ALICE](https://github.com/ChunyuanLI/ALICE).
 - `python 2.7 or 3.5`
 - `TensorFlow 1.0.0`
 
-<img src='/results/XY_gmm_data_train.png' align="right" width=384>
+<img src='/results/X_Y_train.png' align="center" width=250>

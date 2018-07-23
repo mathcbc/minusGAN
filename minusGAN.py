@@ -73,7 +73,7 @@ ax.scatter(X_dataset[:, 0], X_dataset[:, 1], c='b',
 ax.set_xlim(-3, 3); ax.set_ylim(-3.5, 3.5)
 ax.set_xlabel('$x_1$'); ax.set_ylabel('$x_2$')
 ax.axis('on')
-save_path_x = result_dir + 'X_gmm_data_train.png'
+save_path_x = result_dir + 'X_train.png'
 plt.savefig(save_path_x, transparent=True, bbox_inches='tight')
 
 
@@ -85,14 +85,14 @@ variances_z = [np.eye(2) * std_z for _ in means_z]
 priors_z = [1.0/len(means_z) for _ in means_z]
 
 dataset_z = sample_GMM(dataset_size_z, means_z, variances_z, priors_z, sources=('features', ))
-save_path_z = result_dir + 'Z_gmm_data_train.png'
+save_path_z = result_dir + 'Z_train.png'
 
 # plot z
 Z_dataset = dataset_z.data['samples']
 Z_labels = dataset_z.data['label']
 
 _, ax = plt.subplots(nrows=1, ncols=1, figsize=(4.5, 4.5))
-ax.scatter(Z_dataset[:, 0], Z_dataset[:, 1], c='r',
+ax.scatter(Z_dataset[:, 0], Z_dataset[:, 1], c='g',
            edgecolor='none', alpha=0.5)
 ax.set_xlim(-3, 3); ax.set_ylim(-3.5, 3.5)
 ax.set_xlabel('$z_1$'); ax.set_ylabel('$z_2$')
@@ -107,7 +107,7 @@ variances_y = [np.eye(2) * std_y for _ in means_y]
 priors_y = [1.0/len(means_y) for _ in means_y]
 
 dataset_y = sample_GMM(dataset_size_y, means_y, variances_y, priors_y, sources=('features', ))
-save_path_y = result_dir + 'Y_gmm_data_train.png'
+save_path_y = result_dir + 'Y_train.png'
 
 # plot y
 Y_dataset = dataset_y.data['samples']
@@ -128,9 +128,9 @@ ax.scatter(X_dataset[:, 0], X_dataset[:, 1], c='b',
 ax.scatter(Y_dataset[:, 0], Y_dataset[:, 1], c='r',
            edgecolor='none', alpha=0.5)
 ax.set_xlim(-3, 3); ax.set_ylim(-3.5, 3.5)
-ax.set_xlabel('$x_and_y$')
+ax.set_xlabel('$x$ and $y$')
 ax.axis('on')
-save_path_xy = result_dir + 'XY_gmm_data_train.png'
+save_path_xy = result_dir + 'X_Y_train.png'
 plt.savefig(save_path_xy, transparent=True, bbox_inches='tight')
 
 """ Networks """
@@ -259,14 +259,14 @@ variances_z = [np.eye(2) * std_z for _ in means_z]
 priors_z = [1.0/len(means_z) for _ in means_z]
 
 datasetZ_test = sample_GMM(dataset_size_z_test, means_z, variances_z, priors_z, sources=('features', ))
-save_path = result_dir + 'Z_gmm_data_test.png'
+save_path = result_dir + 'Z_test.png'
 
 # plot z test
 Z_data_test = datasetZ_test.data['samples']
 Z_targets_test = datasetZ_test.data['label']
 
 _, ax = plt.subplots(nrows=1, ncols=1, figsize=(4.5, 4.5))
-ax.scatter(Z_data_test[:, 0], Z_data_test[:, 1], c='r',
+ax.scatter(Z_data_test[:, 0], Z_data_test[:, 1], c='g',
            edgecolor='none', alpha=0.5)
 ax.set_xlim(-3, 3); ax.set_ylim(-3.5, 3.5)
 ax.set_xlabel('$z_1$'); ax.set_ylabel('$z_2$')
