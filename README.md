@@ -8,5 +8,6 @@ this code is based on [ALICE](https://github.com/ChunyuanLI/ALICE).
 - `TensorFlow 1.0.0`
 
 we have two datasets X and Y,
-<img src='https://github.com/mathcbc/minusGAN/blob/master/results/X_train.png' align="left" width=384>
-<img src='https://github.com/mathcbc/minusGAN/blob/master/results/Y_train.png' align="left" width=384>
+
+<img src='https://github.com/mathcbc/minusGAN/blob/master/results/X_train.png' align="left" width=250>
+<img src='https://github.com/mathcbc/minusGAN/blob/master/results/Y_train.png' align="left" width=250>
