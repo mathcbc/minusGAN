@@ -73,7 +73,7 @@ ax.scatter(X_dataset[:, 0], X_dataset[:, 1], c='b',
 ax.set_xlim(-3, 3); ax.set_ylim(-3.5, 3.5)
 ax.set_xlabel('$x_1$'); ax.set_ylabel('$x_2$')
 ax.axis('on')
-save_path_x = result_dir + 'X_gmm_data_train.pdf'
+save_path_x = result_dir + 'X_gmm_data_train.png'
 plt.savefig(save_path_x, transparent=True, bbox_inches='tight')
 
 
@@ -85,7 +85,7 @@ variances_z = [np.eye(2) * std_z for _ in means_z]
 priors_z = [1.0/len(means_z) for _ in means_z]
 
 dataset_z = sample_GMM(dataset_size_z, means_z, variances_z, priors_z, sources=('features', ))
-save_path_z = result_dir + 'Z_gmm_data_train.pdf'
+save_path_z = result_dir + 'Z_gmm_data_train.png'
 
 # plot z
 Z_dataset = dataset_z.data['samples']
@@ -107,7 +107,7 @@ variances_y = [np.eye(2) * std_y for _ in means_y]
 priors_y = [1.0/len(means_y) for _ in means_y]
 
 dataset_y = sample_GMM(dataset_size_y, means_y, variances_y, priors_y, sources=('features', ))
-save_path_y = result_dir + 'Y_gmm_data_train.pdf'
+save_path_y = result_dir + 'Y_gmm_data_train.png'
 
 # plot y
 Y_dataset = dataset_y.data['samples']
@@ -130,7 +130,7 @@ ax.scatter(Y_dataset[:, 0], Y_dataset[:, 1], c='r',
 ax.set_xlim(-3, 3); ax.set_ylim(-3.5, 3.5)
 ax.set_xlabel('$x_and_y$')
 ax.axis('on')
-save_path_xy = result_dir + 'XY_gmm_data_train.pdf'
+save_path_xy = result_dir + 'XY_gmm_data_train.png'
 plt.savefig(save_path_xy, transparent=True, bbox_inches='tight')
 
 """ Networks """
@@ -259,7 +259,7 @@ variances_z = [np.eye(2) * std_z for _ in means_z]
 priors_z = [1.0/len(means_z) for _ in means_z]
 
 datasetZ_test = sample_GMM(dataset_size_z_test, means_z, variances_z, priors_z, sources=('features', ))
-save_path = result_dir + 'Z_gmm_data_test.pdf'
+save_path = result_dir + 'Z_gmm_data_test.png'
 
 # plot z test
 Z_data_test = datasetZ_test.data['samples']
@@ -286,7 +286,7 @@ ax.scatter(x_test[:, 0], x_test[:, 1],c='b',
 ax.set_xlim(-3, 3); ax.set_ylim(-3.5, 3.5)
 ax.set_xlabel('$x_1$'); ax.set_ylabel('$x_2$')
 ax.axis('on')
-save_path_x = result_dir + 'minusGAN_result.pdf'
+save_path_x = result_dir + 'minusGAN_result.png'
 plt.savefig(save_path_x, transparent=True, bbox_inches='tight')
 
 # learning curves
@@ -300,6 +300,6 @@ plt.xlabel('Iteration')
 plt.xlabel('Loss')
 ax.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 ax.axis('on')
-plt.savefig(result_dir + 'learning_curves.pdf', bbox_inches='tight')
+plt.savefig(result_dir + 'learning_curves.png', bbox_inches='tight')
 
 
