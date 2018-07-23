@@ -7,9 +7,9 @@ this code is based on [ALICE](https://github.com/ChunyuanLI/ALICE).
 
 we have two datasets X and Y,
 
-<img src='https://github.com/mathcbc/minusGAN/blob/master/results/X_train.png' align="left" width=250>
+<img src='https://github.com/mathcbc/minusGAN/blob/master/results/X_train.png' align="left" width=250 />
 <img src='https://github.com/mathcbc/minusGAN/blob/master/results/Y_train.png' align="left" width=250/>
-<br>
+<br><br><br>
 
 plot them together in a pciture,
 
