@@ -14,10 +14,10 @@ we have two datasets X and Y,
 plot them together in a pciture,
 
 <img src='https://github.com/mathcbc/minusGAN/blob/master/results/X_Y_train.png' width=250/>
-<br>
+
 and we wan to generate a dataset which is from the dataset X but not from the dataset Y, like the set operation X minus Y.
 
-What minusGAN generate is
+What **minusGAN** generate are
 
 <img src='https://github.com/mathcbc/minusGAN/blob/master/results/minusGAN_result.png' align="left" width=250/>
 
