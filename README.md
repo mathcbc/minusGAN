@@ -1,5 +1,5 @@
 # minusGAN
-this code is based on [ALICE](https://github.com/ChunyuanLI/ALICE).
+this code was based on [ALICE](https://github.com/ChunyuanLI/ALICE).
 
 ### Dependencies
 - `python 2.7 or 3.5`
@@ -16,7 +16,7 @@ plot them together in a pciture,
 
 and we wan to generate a dataset which is from the dataset X but not from the dataset Y, like the set operation of X minus Y.
 
-What **minusGAN** generate are
+What **minusGAN** generated are
 
 <img src='https://github.com/mathcbc/minusGAN/blob/master/results/minusGAN_result.png' align="left" width=250/>
 
