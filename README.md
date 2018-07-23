@@ -15,7 +15,7 @@ plot them together in a pciture,
 
 <img src='https://github.com/mathcbc/minusGAN/blob/master/results/X_Y_train.png' width=250/>
 
-and we wan to generate a dataset which is from the dataset X but not from the dataset Y, like the set operation of X minus Y.
+and we want to generate a dataset which is from the dataset X but not from the dataset Y, like the set operation of X minus Y.
 
 What **minusGAN** generated are
 
